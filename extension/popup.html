@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeM Bid Reader</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <header>
+            <h1>GeM Bid Reader</h1>
+        </header>
+        
+        <div class="controls">
+            <button id="readBids" class="btn primary">Read Bids</button>
+            <button id="pauseReading" class="btn secondary">Pause</button>
+            <button id="resumeReading" class="btn secondary">Resume</button>
+            <button id="stopReading" class="btn secondary">Stop</button>
+        </div>
+
+        <div class="status">
+            <p id="statusText">Ready to read bids</p>
+            <p id="currentBid" class="bid-info"></p>
+        </div>
+
+        <div class="settings">
+            <label for="readingSpeed">Reading Speed:</label>
+            <select id="readingSpeed">
+                <option value="0.8">Slow</option>
+                <option value="1.0" selected>Normal</option>
+                <option value="1.2">Fast</option>
+            </select>
+        </div>
+
+        <div class="footer">
+            <small>GeM Bid Reader v1.0</small>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
